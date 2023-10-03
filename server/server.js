@@ -28,6 +28,7 @@ server.get('/profile', (req, res) => {
     res.sendFile(__dirname + '/public/sampson.html')
   }
 })
+
 server.get('/profiles/:id', (req, res) => {
   const id = req.params.id
   console.log(req.params)
